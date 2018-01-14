@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Broadcast by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>CoinTickerTape</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/3.1@3x.png" />
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="header">
+		<h1>
+			<a href="#">CoinTickerTape</a>
+		</h1>
+		<a href="#menu">Menu</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li>
+				<a href="#start">Home</a>
+			</li>
+			<li>
+				<a href="#features">Features</a>
+			</li>
+			<li>
+				<a href="#download">Download</a>
+			</li>
+		</ul>
+	</nav>
+	<a name="start"></a>
+
+	<!-- Banner -->
+	<!--
+				To use a video as your background, set data-video to the name of your video without
+				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+				formats to work correctly.
+			-->
+	<section id="banner" data-video="images/Love-Coding">
+		<div class="inner">
+			
+			<header>
+				<h1>CoinTickerTape</h1>
+				<p>an always-on-top crypto-currency ticker for MacOSX & Windows</p>
+			</header>
+			<a href="#main" class="button big alt scrolly">More</a>
+		</div>
+
+	</section>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+		<section class="wrapper style1">
+			<div class="inner">
+				<header class="align-center">
+						<a name="features"></a>
+					<h2>Features</h2>
+					<p>Easily keep track of all the crypto currencies you are interested in.
+						<br>Checkout CoinTickerTape's features in the video below!</p>
+				</header>
+				<!-- 2 Column Video Section -->
+				<div class="flex flex-2">
+					<div class="video">
+						<div class="video-wrapper">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/s6zR2T9vn2c" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<p class="caption">
+							In luctus nunc nec lacus condimentum maximus. Nunc vestibulum urna a arcu dignissim, nec aliquam ultrices ac massa eget placerat.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Three -->
+		<section class="wrapper ">
+			<div class="inner">
+
+				<script> 
+					
+						document.querySelectorAll('a.download').forEach((el) => el.on("click", function (e) {
+							e.preventDefault();
+						}));
+					
+					function downloadApp(platform) {
+						if ($('#eula').checked) {
+							document.location.href = 'elements.html';
+							// document.querySelector('#eula-error').toggle(false);
+						} else {
+							$('p#eula-error').toggle(true);
+							
+							$('html, body').animate({
+								scrollTop: $("#dl-header").offset().top
+							}, 1200);
+						}
+					}
+
+				</script>
+
+				<header class="align-center">
+						<a name="download"></a>
+					<h2 id="dl-header">Download CoinTickerTape now!</h2>
+					<p>The ticker is available for Windows & MacOSX</p>
+					<input type="checkbox" id="eula" name="eula">
+					<label for="eula">By downloading CoinTickerTape, I accept the
+						<a href="index.html" style="text-decoration: underline">Terms & Conditions</a>
+					</label>
+					<p id="eula-error"style="color: red" hidden>Please accept the Terms & Conditions by checking the box above the downloads.</p> 
+				</header>
+
+
+				<!-- 3 Column Video Section -->
+				<div class="disabled flex flex-2">
+					<div class="video col">
+						<div class="image fit">
+							<img src="images/windows.jpg" alt="" />
+							<div class="arrow">
+								<div class="icon fa-download"></div>
+							</div>
+						</div>
+						<p class="caption">
+							Download v0.0.7 for Windows
+						</p>
+						<a class="link download" id="win-download" onclick="downloadApp('windows')">
+							<span>Click Me</span>
+						</a>
+					</div>
+					<div class="video col">
+						<div class="image fit">
+							<img src="images/mac.jpg" alt="" />
+							<div class="arrow">
+								<div class="icon fa-download"></div>
+							</div>
+						</div>
+						<p class="caption">
+							Download v0.0.7 for MacOSX
+						</p>
+						<a class="link download" id="mac-download" onclick="downloadApp('mac')">
+							<span>Click Me</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+
+
+		</div>
+		<div class="copyright">
+			&copy;
+			<a href="mailto:team.wgsd@gmail.com">Team.WGSD</a>. Design:
+			<a href="https://templated.co">TEMPLATED</a>. Images:
+			<a href="https://unsplash.com">Unsplash</a>. Video:
+			<a href="https://coverr.co">Coverr</a>.
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
