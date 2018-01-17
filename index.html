@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	
 	<link rel="shortcut icon" type="image/x-icon" href="images/3.1@3x.png" />
 </head>
 
@@ -47,7 +48,7 @@
 			-->
 	<section id="banner" data-video="images/Love-Coding">
 		<div class="inner">
-			
+
 			<header>
 				<h1>CoinTickerTape</h1>
 				<p>an always-on-top crypto-currency ticker for MacOSX & Windows</p>
@@ -64,7 +65,7 @@
 		<section class="wrapper style1">
 			<div class="inner">
 				<header class="align-center">
-						<a name="features"></a>
+					<a name="features"></a>
 					<h2>Features</h2>
 					<p>Easily keep track of all the crypto currencies you are interested in.
 						<br>Checkout CoinTickerTape's features in the video below!</p>
@@ -85,37 +86,17 @@
 		<!-- Three -->
 		<section class="wrapper ">
 			<div class="inner">
-
-				<script> 
-					
-						document.querySelectorAll('a.download').forEach((el) => el.on("click", function (e) {
-							e.preventDefault();
-						}));
-					
-					function downloadApp(platform) {
-						if ($('#eula').checked) {
-							document.location.href = 'elements.html';
-							// document.querySelector('#eula-error').toggle(false);
-						} else {
-							$('p#eula-error').toggle(true);
-							
-							$('html, body').animate({
-								scrollTop: $("#dl-header").offset().top
-							}, 1200);
-						}
-					}
-
-				</script>
-
 				<header class="align-center">
-						<a name="download"></a>
+					<a name="download"></a>
 					<h2 id="dl-header">Download CoinTickerTape now!</h2>
 					<p>The ticker is available for Windows & MacOSX</p>
 					<input type="checkbox" id="eula" name="eula">
 					<label for="eula">By downloading CoinTickerTape, I accept the
 						<a href="index.html" style="text-decoration: underline">Terms & Conditions</a>
 					</label>
-					<p id="eula-error"style="color: red" hidden>Please accept the Terms & Conditions by checking the box above the downloads.</p> 
+					<p id="dl-error" style="color: red" hidden>Error while trying to download latest version - please try again later!</p>
+					
+					<p id="eula-error" style="color: red" hidden>Please accept the Terms & Conditions by checking the box above the downloads.</p>
 				</header>
 
 
@@ -145,7 +126,7 @@
 						<p class="caption">
 							Download v0.0.7 for MacOSX
 						</p>
-						<a class="link download" id="mac-download" onclick="downloadApp('mac')">
+						<a class="link download" id="mac-download" onclick="downloadApp('darwin')">
 							<span>Click Me</span>
 						</a>
 					</div>
@@ -176,6 +157,8 @@
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/helper.js"></script>
+	
 
 </body>
 
