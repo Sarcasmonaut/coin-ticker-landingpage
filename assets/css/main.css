@@ -3638,7 +3638,7 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/banner.jpg");
+		/*background-image: url("../../images/banner.jpg");*/
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -3786,9 +3786,11 @@
 		#footer .copyright {
 			color: #676d71;
 			font-size: 0.9em;
-			margin: 0 0 2em 0;
+			margin: 3em 0 2em 0;
 			padding: 0;
 			text-align: center;
+			display: flex;
+			justify-content: center;
 		}
 
 			#footer .copyright .icons {
